@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: delay-learn3
+
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+
+my:
+  exchangeName: exchange.delay.3  # 交换机 （正常交换机、死信交换机）
+  queueOrderName: queue.delay.normal.order.3 # 正常订单队列
+  queuePayName: queue.delay.normal.pay.3 # 正常支付队列
+  queueDlxName: queue.delay.dlx.3  # 死信队列

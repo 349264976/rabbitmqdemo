@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ttl-learn1
+
+  rabbitmq:
+    host: 192.168.10.102
+    port: 5672
+    username: admin
+    password: 520517li
+    virtual-host: atkaien
+    publisher-returns: true #开启return模式
+
+my:
+  exchangeName: exchange.return.5
+  queueName: queue.return.5

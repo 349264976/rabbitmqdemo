@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ttl-learn1
+
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+
+my:
+  exchangeName: exchange.queue.properties4
+  queueName: queue.properties.4

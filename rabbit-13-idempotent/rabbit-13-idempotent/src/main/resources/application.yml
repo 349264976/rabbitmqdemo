@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: rabbit-12-reliability
+
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+    publisher-confirm-type: correlated # 开启发布者的确认模式
+    publisher-returns: true # 开启发布者的return模式
+    listener:
+      simple:
+        acknowledge-mode: manual # 开始消费者的手动确认模式
+  redis:
+    host: 192.168.126.130
+    port: 6379
+    password: 123456
+    database: 0 # 0号数据库
+
+my:
+  exchangeName: exchange.idempotent
+  queueName: queue.idempotent

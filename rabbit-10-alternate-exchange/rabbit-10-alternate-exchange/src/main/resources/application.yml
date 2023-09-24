@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ttl-learn1
+
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+
+my:
+  exchangeNormalName: exchange.normal.alternate  #正常交换机
+  exchangeAlternateName: exchange.alternate.1 #备用交换机
+  queueNormalName: queue.normal.alternate  #正常队列
+  queueAlternateName: queue.alternate.1  # 备用队列

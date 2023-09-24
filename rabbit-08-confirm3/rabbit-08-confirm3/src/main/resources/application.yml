@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: confirm-learn1
+
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+    publisher-confirm-type: correlated # 开启生产者的确认模式，设置关联模式
+
+my:
+  exchangeName: exchange.confirm.3
+  queueName: queue.confirm.3

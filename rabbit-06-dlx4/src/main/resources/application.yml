@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: dlx-learn4
+  # 配置rabbitmq服务器的信息
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+# 自定义
+my:
+  exchangeNormalName: exchange.normal.4 # 正常交换机
+  queueNormalName: queue.normal.4  # 正常队列，没有消费者，设置过期时间
+  exchangeDlxName: exchange.dlx.4  # 死信交换机
+  queueDlxName: queue.dlx.4     # 死信队列

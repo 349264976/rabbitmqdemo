@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: delay-learn2
+
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+
+my:
+  exchangeName: exchange.delay.2  # 交换机 （正常交换机、死信交换机）
+  queueNormalName: queue.delay.normal.2 # 正常队列
+  queueDlxName: queue.delay.dlx.2  # 死信队列

@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: fanout-learning2
+
+  rabbitmq:
+    host: 192.168.10.102
+    port: 5672
+    username: admin
+    password: 520517li
+    virtual-host: atkaien
+

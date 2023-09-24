@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ttl-learning
+
+  rabbitmq:
+    host: 192.168.10.102
+    port: 5672
+    username: admin
+    password: 520517li
+    virtual-host: atkaien
+myrabbit:
+  exchangeName: exchange.direct.ttl2
+  queueName: queue.direct.ttl2

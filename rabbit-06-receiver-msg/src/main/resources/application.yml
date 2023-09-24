@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: dlx-receiver-msg
+  # 配置rabbitmq服务器的信息
+  rabbitmq:
+    host: 192.168.126.130
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: powernode
+    listener:
+      simple:
+        acknowledge-mode: manual # 开启消费者的手动确认
